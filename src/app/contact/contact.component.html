@@ -1,0 +1,9 @@
+<div>
+  <input [(ngModel)]="selectedRestaurant.name" >
+</div>
+<ul>
+  <li *ngFor="let restaurant of restaurants">
+    <h1>{{restaurant.name|uppercase}}</h1>
+    <a  (click)="changeColor(restaurant)">{{restaurant.id}}</a>
+  </li>
+</ul>
