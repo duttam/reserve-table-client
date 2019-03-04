@@ -1,6 +1,6 @@
 <div *ngIf="course">
   <h1>{{course.name}}</h1>
-  <span>{{course.prof}}</span>
+  <span>{{course.prof |uppercase}}</span>
   <div>
     <label>Professor: <input type="text" [(ngModel)]=course.prof>
 
