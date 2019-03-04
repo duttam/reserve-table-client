@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  firstAboutDesc = "This is a description for about component";
   title = 'reserve-table-client';
+
+  onAboutDelete(event){
+    console.log(event);
+  }
 }

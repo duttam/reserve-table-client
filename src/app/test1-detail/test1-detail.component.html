@@ -1,0 +1,10 @@
+<div *ngIf="course">
+  <h1>{{course.name}}</h1>
+  <span>{{course.prof}}</span>
+  <div>
+    <label>Professor: <input type="text" [(ngModel)]=course.prof>
+
+    </label>
+  </div>
+
+</div>

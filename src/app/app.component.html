@@ -1,4 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <p>{{title}}</p>
-
+<app-about (delete)="onAboutDelete($event)" [aboutDesc]="firstAboutDesc"></app-about>
+<app-heroes></app-heroes>
+<app-test1></app-test1>
 <router-outlet></router-outlet>

@@ -1,0 +1,19 @@
+<div *ngIf="selectedCourse">
+  <div>
+    <span>id: </span>{{selectedCourse.courseName}}
+  </div>
+  <div>
+    <label>name</label>
+    <input [(ngModel)]="selectedCourse.courseName">
+  </div>
+</div>
+
+<h2>Courses</h2>
+  <ul>
+    <li *ngFor="let course of courses">
+      
+      <span class="badge">{{course.courseId}}</span>  {{course.courseName}}
+      <button (click)="onSelect(course)" style="color: green;align-self: auto">    edit</button>
+    </li>
+  </ul>
+
